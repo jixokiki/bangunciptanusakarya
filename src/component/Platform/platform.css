@@ -1,0 +1,187 @@
+.platform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -551px;
+    height: 20vh;
+  }
+  
+  .platform-list-Likedin {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .platform-list-Youtube {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .platform-list-Instagram {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .platform-list-Tiktok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .itemp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 129px;
+    height: 129px; */
+    /* background-color: #333; */
+    color: #fff;
+    /* border-radius: 50%; */
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .itemp:hover {
+    background-color: #555;
+  }
+  
+/* CSS untuk tampilan default
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+} */
+
+/* CSS untuk tampilan pada layar lebar (desktop) */
+
+@media screen and (min-width: 992px) {
+  .platform {
+    padding: 40px;
+  }
+
+  .platform-list-Likedin {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  .platform-list-Youtube {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .platform-list-Instagram {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }  
+
+  .platform-list-Tiktok {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .itemp {
+    font-size: 18px;
+  }
+
+  /* .container {
+    padding: 20px;
+  } */
+}
+
+/* CSS untuk tampilan pada perangkat tablet */
+
+@media screen and (max-width: 991px) {
+  .platform {
+    font-size: 36px;
+    height: 100vh;
+    /* margin-bottom: 25px; */
+  }
+
+  .platform-list {
+    font-size: 17px;
+  }
+
+  .itemp {
+    margin-left: 50px;
+    padding: 15px;
+  }
+}
+
+/* CSS untuk tampilan pada perangkat smartphone */
+
+@media screen and (max-width: 767px) {
+  .platform {
+    font-size: 24px;
+    margin-top: -460px;
+    margin-bottom: -300px;
+    justify-content: center;
+    margin-right: 120px;
+    gap: 12px;
+  }
+
+  /* .platform-list-Likedin {
+    font-size: 16px;
+    margin-top: 400px;
+    margin-bottom: 200px;
+  } */
+
+  .platform-list-Youtube {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
+
+  .platform-list-Instagram {
+    font-size: 16px;
+    margin-top: 100px;
+    margin-bottom: -100px;
+  }
+
+  .platform-list-Tiktok {
+    font-size: 16px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .itemp{
+    margin-left: 92px;
+    margin-top: -220px;
+    padding: 60px;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border-radius: 0%;
+    
+  }
+  .itemp:hover {
+    background-color: transparent;
+  }
+}

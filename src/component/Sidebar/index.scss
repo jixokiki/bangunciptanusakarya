@@ -1,0 +1,186 @@
+// .nav-bar {
+//     background: #e0b860;
+//     width: 55px; /* Slightly smaller width */
+//     left: 0;
+//     height: 100vh; /* Full viewport height */
+//     position: fixed;
+//     top: 0;
+//     z-index: 3;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     .logo {
+//         padding: 10px 0;
+
+//         img {
+//             display: block;
+//             margin: 0 auto;
+//             width: 36px; /* Slightly smaller logo size */
+//             height: auto;
+//         }
+//     }
+
+//     nav {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin-top: 10px;
+
+//         a {
+//             font-size: 12px; /* Smaller font size */
+//             color: #4d4d4e;
+//             display: block;
+//             margin-bottom: 8px; /* Reduced space between links */
+//             text-decoration: none;
+//             text-align: center; /* Center text */
+//             letter-spacing: 0.5px; /* Slightly closer letter spacing */
+
+//             &:hover {
+//                 color: #f9f8f3;
+//             }
+
+//             &:first-child:after {
+//                 content: 'HOME';
+//             }
+//         }
+
+//         a.about-link:after {
+//             content: 'ABOUT';
+//         }
+
+//         a.experience-link:after {
+//             content: 'EXPERIENCE';
+//         }
+
+//         a.active svg {
+//             color: #ffd700;
+//         }
+//     }
+
+//     ul {
+//         padding: 0;
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 8px; /* Slightly reduced gap between icons */
+
+//         li {
+//             a {
+//                 padding: 4px 0; /* Less padding */
+//                 font-size: 11px; /* Reduced font size for icons */
+//                 display: block;
+
+//                 &:hover svg {
+//                     color: #ffd700;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.nav-bar {
+    background: #e0b860;
+    width: 55px; /* Slightly smaller width */
+    left: 0;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        padding: 10px 0;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 40px; /* Slightly smaller logo size */
+            height: auto;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        a {
+            font-size: 22px; /* Smaller font size */
+            color: #4d4d4e;
+            display: block;
+            position: relative; /* Needed for hover effect */
+            margin-bottom: 8px; /* Reduced space between links */
+            text-decoration: none;
+            text-align: center; /* Center text */
+            letter-spacing: 0.5px; /* Slightly closer letter spacing */
+            transition: all 0.3s ease-out;
+
+            /* Hide text by default */
+            &::after {
+                content: attr(data-text); /* Dynamic content */
+                position: absolute;
+                top: 50%; /* Center vertically */
+                left: 50%; /* Center horizontally */
+                transform: translate(-50%, -50%); /* Adjust position */
+                opacity: 0; /* Initially hidden */
+                color: #ffff;
+                font-weight: bold;
+                font-size: 7px;
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover::after {
+                opacity: 1; /* Show the text on hover */
+            }
+
+            &:hover svg {
+                opacity: 0; /* Hide the icon on hover */
+            }
+        }
+
+        .nav-home::after {
+            content: 'HOME';
+        }
+
+        .nav-about::after {
+            content: 'ABOUT';
+        }
+
+        .nav-experience::after {
+            content: 'EXPERIENCE';
+        }
+
+        a.active svg {
+            color: #ffd700;
+        }
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* Slightly reduced gap between icons */
+
+        li {
+            a {
+                padding: 4px 0; /* Less padding */
+                font-size: 22px; /* Reduced font size for icons */
+                display: block;
+
+                &:hover svg {
+                    color: #ffd700;
+                }
+            }
+        }
+    }
+}

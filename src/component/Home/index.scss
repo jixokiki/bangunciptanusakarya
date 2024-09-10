@@ -1,0 +1,116 @@
+.home-page{
+    @media(max-width: 48em){
+        .text-zone{
+            // width: unset;
+            position: absolute;
+            inset: 0 0 0 0 34%;
+
+            flex-direction: column;
+            padding: min(80vh, 120rem) 7em;
+            padding-left: 100px;
+            top: 100px;
+            margin-top: 10px;
+            padding-left: 100px;
+            left: 100em;
+            
+            
+            h1{
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1{
+        color: #fff;
+        font-size: 56px;
+        line-height: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        top: -100px;
+
+        &::before{
+            // content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: -15px;
+            opacity: 0.6;
+        }
+
+        &::after{
+            //content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 38px;
+            margin-left: -13px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+
+        img{
+            width: 175px;
+            margin-top: 40px;
+        }
+
+        // h2{
+            
+        //     line-height: 70px;
+        //     font-weight: 400;
+        // }
+        
+    }
+    .bottom-right-tags{
+        color: #f6f5f2;
+        opacity: 0.6;
+        position: absolute;
+        bottom: -440px;
+        margin-bottom: -2220px;
+        right: 3px;
+        font-size: 7px;
+        font-family: 'Coolvetica';
+    
+        h2{
+            line-height: 1px;
+        }
+    }
+    .tags{
+        color: #ffd700;
+        opacity: 0.6;
+        position: absolute;
+        bottom: -370px;
+        left: 1px;
+        font-size: 16px;
+        font-family: 'La Belle Aurore';
+    }
+    .top-tags{
+        bottom: auto;
+        top: -35px;
+        font-size: 38px;
+        color: #ffd700;
+        opacity: 0.6;
+        position: absolute;
+        left: 100px;
+        font-family: 'La Belle Aurore';
+    }
+
+    .tags {
+        margin-bottom: -2350px;
+        margin-left: 90px;
+    }
+
+}

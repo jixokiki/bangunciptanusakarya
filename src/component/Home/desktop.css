@@ -1,0 +1,46 @@
+/* Increase the font size for the bottom-right tags (Kontak Informasi) */
+.bottom-right-tags {
+    color: #f6f5f2;
+    opacity: 0.8;
+    position: absolute;
+    left: 120px;
+    line-height: 1.5; /* Adjust line height for better spacing */
+    /* max-width: 300px; Set max width for better formatting */
+  }
+  
+  .bottom-right-tags h2 {
+    font-size: 20px; /* Increase font size of heading */
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+
+  .bottom-right-tags2  {
+    font-family: 'Coolvetica';
+    font-size: 15px; /* Increase font size of heading */
+    font-weight: bold;
+    color: #f6f5f2;
+    text-align: justify;
+  }
+  
+  .tags {
+    color: #ffd700;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 100px; /* Adjust the positioning */
+    left: 20px;
+    font-size: 18px; /* Increase the font size */
+    font-family: 'La Belle Aurore';
+  }
+  
+  /* Optional: Adjust other text styles for better readability */
+  .text-zone h1 {
+    font-size: 56px; /* Keep the large title size */
+    line-height: 70px;
+  }
+  
+  .text-zone h2 {
+    font-size: 24px; /* Adjust the subheading */
+    line-height: 32px;
+  }
+  
+  

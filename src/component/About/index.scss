@@ -1,0 +1,15 @@
+.about-page{
+    
+        @media (max-width: 48em){
+            .text-zone{
+                // --gap: 2em;
+                // top: 555rem;
+                width: unset;
+                position: absolute;
+                inset: 0 0 0 0 14%;
+
+                flex-direction: column;
+                padding: min(80vh, 120rem) 5em;
+            }
+        }
+}

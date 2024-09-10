@@ -1,0 +1,26 @@
+.experience {
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .experience-gallery {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space between the images */
+    align-items: center; /* Center align the images */
+    height: 100vh; /* Make sure it takes full screen height */
+    gap: 20px; /* Space between images */
+  }
+  
+  .experience-image {
+    width: 177vh; /* Adjust width for desktop to match your desired size */
+    height: 100vh; /* Adjust height for desktop */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .experience-image:hover {
+    transform: scale(1.1); /* Hover effect */
+  }
+  

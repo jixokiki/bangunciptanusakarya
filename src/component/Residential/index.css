@@ -1,0 +1,25 @@
+.residential {
+    text-align: center;
+    padding: 1px;
+}
+  
+  .residential-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: -5px;
+  }
+  
+  .residential-image {
+    width: 1300px;
+    height: 190px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .residential-image:hover {
+    transform: scale(1.1);
+  }
+  
+  

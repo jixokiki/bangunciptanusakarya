@@ -1,0 +1,91 @@
+/* Stil umum untuk formulir */
+form {
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  text-align: center;
+  color: #ecde14;
+  font-size: 60px;
+  margin-top: 400px;
+}
+
+/* Stil untuk label */
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Stil untuk input dan textarea */
+input,
+textarea {
+  padding: 20px;
+  margin-bottom: 25px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  ::-webkit-input-placeholder {
+    color: #333;
+  }
+  :-moz-placeholder {
+    color: #333;
+  }
+  ::-moz-placeholder {
+    color: #333;
+  }
+  :-ms-input-placeholder {
+    color: #333;
+  }
+}
+
+/* Stil untuk tombol */
+button {
+  padding: 10px 120px;
+  background-color: #007bff;
+  width: 320px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Media query untuk layar kecil */
+@media screen and (max-width: 600px) {
+  form {
+    width: 75%;
+    margin-left: 53px;
+    margin-top: -50px;
+  }
+
+  button{
+    width: 10%;
+    margin-left: -10px;
+
+  }
+
+  h7{
+    margin-left: -20px;
+  }
+  input,textarea{
+    width: 75%;
+  }
+  h4{
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+}

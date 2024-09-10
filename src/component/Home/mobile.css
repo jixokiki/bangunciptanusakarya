@@ -1,0 +1,45 @@
+mobile.css
+.home-page {
+    /* Styles specifically for mobile */
+    text-align: center;
+  }
+  
+  .text-zone {
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .bottom-right-tags {
+    left: 80px;
+    max-width: 1000px; 
+    text-align: justify;
+  }
+
+  .bottom-right-tags h2 {
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .bottom-right-tags2 {
+    font-size: 13px;
+    bottom: 10px;
+    text-align: justify;
+  }
+  
+  .tags {
+    font-size: 12px;
+    left: 10px;
+    bottom: 20px;
+  }
+  
+  .top-tags {
+    font-size: 20px;
+    left: 15px;
+  }
+  

@@ -1,0 +1,103 @@
+/* Base Styles for Global Elements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-zone {
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+/* Styling for Mobile Devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .text-zone h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .experience-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the form elements for mobile */
+    form {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Styling for Tablets (up to 992px) */
+@media only screen and (max-width: 992px) {
+    .text-zone h1 {
+        font-size: 32px;
+    }
+
+    .experience-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .experience-image {
+        width: 45%;
+        height: auto;
+    }
+
+    /* Adjust form input fields */
+    form {
+        width: 80%;
+    }
+
+    input, textarea {
+        width: 80%;
+    }
+}
+
+/* Styling for Laptops (up to 1200px) */
+@media only screen and (max-width: 1200px) {
+    .text-zone h1 {
+        font-size: 48px;
+    }
+
+    .experience-gallery {
+        gap: 10px;
+    }
+
+    .experience-image {
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* Desktop Styling */
+@media only screen and (min-width: 1200px) {
+    .text-zone h1 {
+        font-size: 56px;
+    }
+
+    .experience-gallery {
+        gap: 10px;
+    }
+
+    .experience-image {
+        width: 25%;
+        height: auto;
+    }
+}

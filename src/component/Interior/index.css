@@ -1,0 +1,26 @@
+.interior {
+    text-align: center;
+    padding: 1px;
+}
+  
+  .interior-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: -5px;
+  }
+  
+  .interior-image {
+    width: 1300px;
+    height: 190px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .interior-image:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  

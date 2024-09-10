@@ -1,0 +1,25 @@
+.hospitality {
+    text-align: center;
+    padding: 1px;
+}
+  
+.hospitality-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: -5px;
+}
+  
+.hospitality-image {
+    width: 1300px;
+    height: 190px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+  
+.hospitality-image:hover {
+    transform: scale(1.1);
+}
+  
+  

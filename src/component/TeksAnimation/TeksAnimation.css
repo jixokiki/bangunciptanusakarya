@@ -1,0 +1,96 @@
+/* .App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+  color: whitesmoke;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+} */
+
+
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: transparent; /* Menghilangkan background color */
+  text-align: center;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  margin-bottom: 20px;
+  pointer-events: none; /* Menonaktifkan interaksi mouse pada textarea */
+  width: 100%;
+}
+
+.animated-text {
+  font-size: 13px;
+  color: antiquewhite;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}

@@ -1,0 +1,37 @@
+.experience {
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .experience-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between images */
+  }
+  
+  .experience-image {
+    width: calc(33.33% - 20px); /* Each image will take one-third of the row on desktop */
+    max-width: 400px; /* Set a reasonable max width to prevent large images */
+    height: 250px; /* Adjusted height */
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .experience-image:hover {
+    transform: scale(1.1); /* Hover effect */
+  }
+  
+  @media screen and (max-width: 850px) {
+    .experience-gallery {
+      display: block; /* Stack images vertically on smaller screens */
+    }
+  
+    .experience-image {
+      width: 100%; /* Full width on mobile */
+      max-width: 100%; /* Ensures image takes full available width */
+      height: 250px; /* Set the height consistently */
+    }
+  }
+  
